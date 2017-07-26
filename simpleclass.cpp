@@ -15,3 +15,8 @@ void SimpleClass::helloBytes(std::vector<char> *results){
 	results->push_back('l');
 	results->push_back('d');
 }
+
+int SimpleClass::add(int a, int b) {
+	return a + b;
+}
+

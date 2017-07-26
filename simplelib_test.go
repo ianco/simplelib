@@ -1,7 +1,7 @@
 package simplelib_test
 
 import (
-	"github.com/zacg/simplelib"
+	"github.com/ianco/simplelib"
 	"testing"
 )
 
@@ -32,3 +32,21 @@ func TestHelloBytes(t *testing.T) {
 		t.Error("incorrect size: ", v)
 	}
 }
+
+func TestSimpleAdd(t *testing.T) {
+	c := simplelib.NewSimpleClass()
+	i := c.Add(1, 2);
+	if i != 3 {
+		t.Error("incorrect result: ", i);
+	}
+}
+
+func TestMiscSqrtNumber(t *testing.T) {
+	c := simplelib.NewMisc()
+	i := c.Sqrt(64)
+	if i != 8 {
+		t.Error("incorrect result: ", i);
+	}
+}
+
+

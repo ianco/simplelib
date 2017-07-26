@@ -11,6 +11,7 @@ public:
     std::string hello();
     void helloString(std::vector<std::string> *results);
     void helloBytes(std::vector<char> *results);
+    int add(int a, int b);
 };
 
 #endif

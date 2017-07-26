@@ -1,6 +1,7 @@
 %module simplelib
 %{
 #include "simpleclass.h"
+#include "OMISC.h"
 %}
 
 %include <typemaps.i>
@@ -16,3 +17,5 @@ namespace std {
 }
 
 %include "simpleclass.h"
+%include "OMISC.h"
+
